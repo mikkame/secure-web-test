@@ -23,7 +23,7 @@ header("X-XSS-Protection: 1; mode=block");
 	<body>
 		<h1>Secure Web Test</h1>
 		<span id="forkongithub">
-			<a href="https://github.com/codepo8/css-fork-on-github-ribbon">Fork me on GitHub</a>
+			<a href="https://github.com/mikkame/secure-web-test">Fork me on GitHub</a>
 		</span>
 	</body>
 </html>
