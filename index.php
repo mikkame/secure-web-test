@@ -1,5 +1,5 @@
 <?php
-if(empty($_SERVER['HTTPS'])){
+if($_SERVER['X-Forwarded-Proto'] == 'http'){
 	header('Location: https://'.$_SERVER['HTTP_HOST']);
     exit;
 }
