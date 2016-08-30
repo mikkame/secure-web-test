@@ -1,6 +1,11 @@
 <?php
+if(empty($_SERVER['HTTPS'])){
+	header('Location: https://'.$_SERVER['HTTP_HOST']);
+    exit;
+}
 setcookie('test', 'test', 0, '/', $_SERVER["HTTP_HOST"], true, true);
 header("Content-Security-Policy: default-src 'self'");
+heder('Strict-Transport-Security: max-age=31536000');
 header("X-Content-Type-Options: nosniff");
 header("X-Frame-Options: DENY");
 header("X-XSS-Protection: 1; mode=block");
