@@ -1,4 +1,6 @@
 <?php
+var_dump($_SERVER);die();
+
 if($_SERVER['X-Forwarded-Proto'] == 'http'){
 	header('Location: https://'.$_SERVER['HTTP_HOST']);
     exit;
